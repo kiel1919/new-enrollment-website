@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(248, 249, 250, 0.8); /* Semi-transparent background */
+    padding: 1em;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 2em;
+    background-image: url('C:/Users/fpang/Downloads/482280863_24673656148944255_5396854022220338476_n.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Ensure text is readable */
+    min-height: 100vh; /* Ensure the main content takes the full height of the viewport */
+}
+
+footer {
+    background-color: rgba(248, 249, 250, 0.8); /* Semi-transparent background */
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+label {
+    margin-top: 1em;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+links {
+    margin-top: 10px;
+    font-size: 12px;
+}

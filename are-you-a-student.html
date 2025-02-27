@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You a Student?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('forms-section').style.display = 'none';
+            document.getElementById('contact-info-section').style.display = 'none';
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Are You a Student?</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="are-you-a-student.html">Are You a Student?</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Find Out More About Our Programs</h2>
+            <button onclick="showSection('forms-section')">Forms</button>
+            <button onclick="showSection('contact-info-section')">Contact Information</button>
+        </section>
+        <section id="forms-section" style="display:none;">
+            <h2>Forms</h2>
+            <form action="https://formenrollshs.vercel.app/submit" method="post" enctype="multipart/form-data">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br>
+                <label for="lrn">Learner Reference Number:</label>
+                <input type="text" id="lrn" name="lrn" placeholder="Enter your LRN" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your number" required>
+                <br>
+                <label for="form137">Upload Form 137:</label>
+                <input type="file" id="form137" name="form137" required>
+                <br>
+                <label for="form138">Upload Form 138:</label>
+                <input type="file" id="form138" name="form138" required>
+                <br>
+                <label for="psa">Upload PSA/Birth Certificate:</label>
+                <input type="file" id="psa" name="psa" required>
+                <br>
+                <label for="goodMoral">Upload Certificate of Good Moral:</label>
+                <input type="file" id="goodMoral" name="goodMoral" required>
+                <br>
+                <label for="picture">Upload 2x2 Picture:</label>
+                <input type="file" id="picture" name="picture" required>
+                <br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="contact-info-section" style="display:none;">
+            <h2>Contact Information</h2>
+            <p>You can also reach us at:</p>
+            <p>Email: info@enrollmentwebsite.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Enrollment St, Education City, EC 12345</p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
